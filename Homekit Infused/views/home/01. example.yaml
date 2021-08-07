@@ -1,0 +1,107 @@
+- type: custom:mod-card
+  style: |
+    ha-card {
+      margin-left: 7px;
+      margin-right: 7px;
+    }
+  card:
+    type: vertical-stack
+    cards:
+      - type: markdown
+        # card_size : none
+        # style: |
+        #   ha-card {
+        #     background: rgba(0, 0, 0, 0);
+        #     font-size: 20px;
+        #     font-family: var(--font-family);
+        #     color: white;
+        #     text-align: center;
+        #   }
+        style: |
+          ha-card { 
+              --ha-card-background: "rgba(0, 0, 0, 0.0)";
+              --ha-card-box-shadow: 'none';
+              font-size: 20px;
+              text-align: center;
+          }
+        content: |
+          ##### {{ states('sensor.date')}} &nbsp; {{ states('sensor.jieqi_cnday')}}  &nbsp;{{ states('sensor.jieqi_week')}}
+          # {{ states('sensor.time')}}
+      - !include
+        - ../../../hki-base/templates/other/title-text.yaml
+        - name: "&nbsp; 快速跳转"
+      - type: horizontal-stack
+        cards:
+          - !include
+            - "../../templates/button/quick-access-menu.yaml"
+            - name: 导航
+              icon: mdi:apps
+              navigation_path: /homekit-infused/menu
+              opacity_off: 0.8
+          - !include
+            - "../../templates/button/quick-access-menu.yaml"
+            - name: 房间
+              icon: mdi:door
+              navigation_path: /homekit-infused/house
+              opacity_off: 0.8
+          - !include
+            - "../../templates/button/quick-access-menu.yaml"
+            - name: 服务器
+              icon: mdi:nas
+              navigation_path: /homekit-infused/server_status
+              opacity_off: 0.8
+          - !include
+            - "../../templates/button/quick-access-menu.yaml"
+            - name: 系统
+              icon: mdi:home-assistant
+              navigation_path: /homekit-infused/home_assistant_setting
+              opacity_off: 0.8
+      - !include ../../../hki-base/includes/search-card.yaml
+
+      - !include
+        - ../../../hki-base/templates/other/title-text.yaml
+        - name: "&nbsp; 成员概况"
+      - type: horizontal-stack
+        cards:
+          - !include
+            - "../../../hki-user/templates/picture-elements/frontpage-photo.yaml"
+            - person: person.huzemin
+              image_path: /local/images/Person/frontpage-wo.png
+              navigation_path: person_1
+              alignment: left
+              text_color: var(--paper-item-icon-color)
+              phone_battery_sensor: sensor.hassapp_huzemin_iphone7p_battery_level
+              travel_time_to_home: sensor.traffic_office_to_home
+              travel_time_to_work: sensor.traffic_home_to_office
+          - !include
+            - "../../../hki-user/templates/picture-elements/frontpage-photo.yaml"
+            - person: person.sunyujiao
+              image_path: /local/images/Person/frontpage-mama.png
+              navigation_path: person_2
+              alignment: right
+              text_color: var(--paper-item-icon-color) #var(--primary-text-color)
+              phone_battery_sensor: sensor.sunyujiao_iphone_battery_level
+              travel_time_to_home: sensor.traffic_office_to_office
+              travel_time_to_work: sensor.traffic_office_to_office
+      - type: horizontal-stack
+        cards:
+          - !include
+            - "../../../hki-user/templates/picture-elements/frontpage-photo.yaml"
+            - person: person.huyicheng
+              image_path: /local/images/Person/frontpage-baby.png
+              navigation_path: person_3
+              alignment: left
+              text_color: var(--paper-item-icon-color)
+              phone_battery_sensor: sensor.oneplus_a5010_dian_chi_dian_liang #sensor.gps01_power
+              travel_time_to_home: sensor.traffic_office_to_school
+              travel_time_to_work: sensor.traffic_office_to_school
+          - !include
+            - "../../../hki-user/templates/picture-elements/frontpage-photo.yaml"
+            - person: person.cruze
+              image_path: /local/images/Person/frontpage-car.png
+              navigation_path: person_4
+              alignment: right
+              text_color: var(--paper-item-icon-color)
+              phone_battery_sensor: sensor.traccar_cruze_battery_obd
+              travel_time_to_home: sensor.traffic_home_to_hometown
+              travel_time_to_work: sensor.traffic_home_to_office

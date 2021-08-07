@@ -1,0 +1,59 @@
+general_config:
+  # Screen Margins
+  margins: 7px
+
+  # Alarm Entity ##########################################################################################################################
+  alarm:
+    entity: alarm_control_panel.home_alarm
+    type: keypad # Choose between keypad or toggles
+
+  # Header ################################################################################################################################
+  header:
+    show_sensors: true
+    sensors: # You can remove the sensors you don't want to show, you can have as many as you want. Note: Leaving group_entity empty will disable it's popup but still show the number.
+      - icon: mdi:door
+        entity: sensor.current_doors_open
+        group_entity: group.all_door_sensor_entities
+      - icon: mdi:window-open
+        entity: sensor.current_windows_open
+        group_entity: group.all_window_sensor_entities
+      - icon: mdi:run
+        entity: sensor.current_motion_sensors_on
+        group_entity: group.all_motion_sensor_entities
+      - icon: mdi:power-plug-outline
+        entity: sensor.current_devices_on
+        group_entity: group.all_device_switch_entities
+      - icon: mdi:lightbulb-outline
+        entity: sensor.current_lights_on
+        group_entity: group.all_light_entities
+
+  # Vacuum Fan Speeds
+  vacuum:
+    min: Silent
+    medium: Standard
+    high: Medium
+    max: Turbo
+    mop: Gentle
+
+# Popups ################################################################################################################################
+# Note: Removing any of the settings below will make the setup turn back to defaults!
+
+  popups: # The settings below apply to all light/switch slider popups
+    slider_colored_by_light: true
+    height: 410px
+    width: 110px
+    actions_per_row: 3
+    action_size: 30px
+    rgb_popup: # The settings below are specific to the RGB popup, you can add/remove colors if you want, but you MUST add both the rgb and hex value!
+      - rgb_color: [255, 136, 0]
+        hex_color: '#ff8800'
+      - rgb_color: [255, 0, 95]
+        hex_color: '#ff005f'
+      - rgb_color: [40, 255, 0]
+        hex_color: '#28ff00'
+      - rgb_color: [0, 160, 255]
+        hex_color: '#00a0ff'
+      - rgb_color: [131, 0, 255]
+        hex_color: '#8300ff'
+      - rgb_color: [3, 0, 255]
+        hex_color: '#0300ff'
