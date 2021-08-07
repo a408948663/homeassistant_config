@@ -1,0 +1,50 @@
+type: vertical-stack
+style: |
+  ha-card {
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+cards:
+  - type: markdown
+    cards: null
+    style: |
+      ha-card {
+        background: rgba(0, 0, 0, 0);
+        font-size: 20px;
+        font-family: var(--font-family);
+        color: white;
+        text-align: center;
+      }
+    content: |
+      ##### {{ states('sensor.date')}} &nbsp; {{ states('sensor.jieqi_cnday')}}  &nbsp;{{ states('sensor.jieqi_week')}}
+      # {{ states('sensor.time')}}
+  - !include
+    - ../../../../hki-base/templates/other/title-text.yaml
+    - name: "&nbsp; 快捷菜单&全局搜索"
+  - type: horizontal-stack
+    cards:
+      - !include
+        - "../../../hki-user/templates/button/quick-access-menu.yaml"
+        - name: 主页
+          icon: mdi:home
+          navigation_path: /homekit-infused/home
+          opacity_off: 0.8
+      - !include
+        - "../../../hki-user/templates/button/quick-access-menu.yaml"
+        - name: 菜单
+          icon: mdi:menu
+          navigation_path: /homekit-infused/menu
+          opacity_off: 0.8
+      - !include
+        - "../../../hki-user/templates/button/quick-access-menu.yaml"
+        - name: 设备
+          icon: mdi:nas
+          navigation_path: /homekit-infused/computers
+          opacity_off: 0.8
+      - !include
+        - "../../../hki-user/templates/button/quick-access-menu.yaml"
+        - name: 系统
+          icon: mdi:tools
+          navigation_path: /homekit-infused/ha_settings
+          opacity_off: 0.8
+  - !include ../../../hki-base/includes/search-card.yaml
