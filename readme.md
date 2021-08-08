@@ -1,13 +1,15 @@
-# 关于
+# 说明
 
 
 
 
 本仓库主要分享我自己在玩HomeAssistant界面过程中,个人觉得好玩的界面框架及插件相关,顺便放上自己的示例配置,主要接触的主题框架有Homekit Infused和dwains-lovelace-dashboard,玩HKI比较多,DW相对较少,但是一直在关注,所以分享的配置主要以HKI4.0.0为主,目前最新版本是4.0RC.
 
-PS:个人并不熟悉git相关操作,可能会闹不少笑话,不是互联网相关从业人员,请海涵,分享的东西对喜欢的人有参考性于我来说就是最大的满足了(当然也可能会挖不少坑,各取所需吧,感谢关注.
+PS:个人并不熟悉git相关操作,可能会闹不少笑话,不是互联网相关从业人员,请海涵,分享的东西对喜欢的人有参考性于我来说就是最大的满足了(当然也可能会挖不少坑,各取所需吧),感谢关注.
 
-# 主题框架来源
+![我的分享](README.assets/%E6%88%91%E7%9A%84%E5%88%86%E4%BA%AB.png)
+
+# 关于
 
 ## Homekit Infused
 
@@ -33,5 +35,24 @@ PS:个人并不熟悉git相关操作,可能会闹不少笑话,不是互联网相
  - 插件库：https://github.com/dwainscheeren/dwains-dashboard-addons
 
 
-# HKI 主题卡片效果(待补充)
+# 我的HKI 卡片
 
+
+
+![IMG_0779](README.assets/IMG_0779.PNG)
+
+![IMG_0780](README.assets/IMG_0780.PNG)
+
+![IMG_0784](README.assets/IMG_0784.PNG)
+
+![IMG_0788](README.assets/IMG_0788.PNG)
+
+![IMG_0790](README.assets/IMG_0790.PNG)
+
+![IMG_0791](README.assets/IMG_0791.PNG)
+
+![IMG_0792](README.assets/IMG_0792.PNG)
+
+![IMG_0794](README.assets/IMG_0794.PNG)
+
+![IMG_0798](README.assets/IMG_0798.PNG)
