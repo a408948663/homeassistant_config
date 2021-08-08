@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Bei Google anmelden",
+        "description": "Bitte gebe deine Logindaten zu einem mit deinen Google Home oder Google Nest Geräten verknüpften Google Account ein. Wenn du 2-factor-Authentifizierung nutzt, brauchst du ein Application Password. Dieses kann nach erfolgreicher Einrichtung der Integration wieder gelöscht werden. Falls Probleme auftauchen sollte während des Loginprozesses, kann auch ein vorhandener Mastertoken in das vorgesehene Feld hinterlegt werden (dies ist nicht nötig, falls die Benutzername und Passwort Kombination funktioniert).",
+        "data": {
+          "username": "Google Konto",
+          "password": "Passwort",
+          "master_token": "Master Token (Optional)"
+        }
+      }
+    },
+    "error": {
+      "auth_error": "Login fehlgeschlagen",
+      "master_token_incorrect": "Fehlerhafter Mastertoken"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "track_alarms": "Erfasse gestellte Timer und Wecker",
+          "track_devices": "Verfolge Bluetooth Geräte in der Nähe",
+          "track_new_devices": "Füge neue Geräte hinzu",
+          "consider_home": "Zeit (in Sekunden) bis ein Gerät wieder als nicht in der Nähe angesehen wird",
+          "rssi_threshold": "RSSI Grenze (Bluetooth)"
+        }
+      }
+    }
+  }
+}

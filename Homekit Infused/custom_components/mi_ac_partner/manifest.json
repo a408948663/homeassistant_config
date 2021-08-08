@@ -1,0 +1,9 @@
+{
+  "domain": "mi_ac_partner",
+  "name": "Xiaomi Mi and Aqara Air Conditioning Companion Player",
+  "documentation": "https://github.com/syssi/xiaomi_airconditioningcompanion",
+  "requirements": [],
+  "version": "0.0.1",
+  "dependencies": [],
+  "codeowners": []
+}

@@ -1,0 +1,11 @@
+{
+  "domain": "radio",
+  "name": "Radio",
+  "documentation": "",
+  "version": "0.0.1",
+  "requirements": ["ha-ffmpeg"],
+  "dependencies": [
+    "group"
+  ],
+  "codeowners": []
+}

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 250 250"
+   version="1.1"
+   id="svg27"
+   sodipodi:docname="icon_portainer.svg"
+   inkscape:version="1.0.2-2 (e86c870879, 2021-01-15)"
+   width="250"
+   height="250">
+  <metadata
+     id="metadata31">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10000"
+     guidetolerance="10000"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="3840"
+     inkscape:window-height="2066"
+     id="namedview29"
+     showgrid="false"
+     inkscape:zoom="1.8284139"
+     inkscape:cx="182.78365"
+     inkscape:cy="-46.961471"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g824"
+     inkscape:snap-path-clip="true"
+     inkscape:snap-path-mask="true"
+     inkscape:snap-perpendicular="true"
+     inkscape:snap-tangential="true"
+     showborder="true"
+     borderlayer="true"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-rotation="0" />
+  <defs
+     id="defs13">
+    <clipPath
+       id="a"
+       transform="translate(178.38 178.11)">
+      <circle
+         cx="489.29999"
+         cy="489.29999"
+         r="475.29999"
+         style="fill:none"
+         id="circle2" />
+    </clipPath>
+    <radialGradient
+       id="b"
+       cx="466.56"
+       cy="509.06"
+       r="269.37"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0"
+         stop-color="#fff"
+         id="stop5" />
+      <stop
+         offset="0.43"
+         stop-color="#eaeaea"
+         id="stop7" />
+      <stop
+         offset="1"
+         stop-color="#c8c8c8"
+         id="stop9" />
+    </radialGradient>
+    <radialGradient
+       id="c"
+       cx="557.79999"
+       cy="414.69"
+       r="215.24001"
+       xlink:href="#b" />
+  </defs>
+  <g
+     id="g824"
+     transform="matrix(0.49999225,0,0,0.4999904,0,0.0048)">
+    <ellipse
+       style="fill:#13bef9;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path5119"
+       cx="250.00388"
+       cy="249.99519"
+       rx="219.78214"
+       ry="219.78499" />
+    <path
+       d="M 249.95733,499.99953 A 250.12766,250.05617 0 0 1 152.62102,19.669719 250.12478,250.05331 0 0 1 347.29365,480.35489 248.5025,248.43148 0 0 1 249.95733,499.99953 Z m 0,-485.673963 A 235.81799,235.7506 0 0 0 158.19669,467.17842 235.81475,235.74736 0 0 0 341.72309,32.846178 234.26948,234.20255 0 0 0 249.95733,14.325567 Z"
+       style="fill:#13bef9;stroke-width:0.510986;fill-opacity:1"
+       id="path21"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g910"
+       transform="translate(1.8026366e-6,-5.4088793)">
+      <g
+         id="g56"
+         transform="matrix(0.25544809,0,0,0.25544809,-102.98747,395.75754)"
+         style="fill:#ffffff">
+        <path
+           class="st1"
+           d="m 720.34131,-368.72999 c -21.20032,0 -39.80061,9.80018 -52.60081,25.00048 v -22.80044 h -21.20033 v 202.60389 h 21.20033 v -85.40164 c 12.60019,15.6003 31.40049,25.60049 52.60081,25.60049 39.60062,0 72.20112,-33.80065 72.20112,-72.8014 0,-39.60076 -32.6005,-72.20138 -72.20112,-72.20138 z m 0.60001,124.00238 c -27.60042,0 -52.0008,-24.40047 -52.0008,-52.001 0,-28.20054 24.40038,-51.20099 52.0008,-51.20099 28.20044,0 49.40077,23.00045 49.40077,51.20099 0,27.60053 -21.20033,52.001 -49.40077,52.001 z"
+           id="path916"
+           style="fill:#ffffff;stroke-width:2.00003" />
+        <path
+           class="st1"
+           d="m 885.34387,-223.92721 c 39.60062,0 72.20112,-33.80065 72.20112,-72.8014 0,-39.60076 -32.6005,-72.20139 -72.20112,-72.20139 -39.60061,0 -72.20112,32.60063 -72.20112,72.20139 0,39.00075 32.60051,72.8014 72.20112,72.8014 z m 0,-124.00239 c 28.20044,0 50.00078,23.00045 50.00078,51.20099 0,27.60053 -21.80034,52.001 -50.00078,52.001 -28.20044,0 -50.00077,-24.40047 -50.00077,-52.001 0,-28.00054 21.80033,-51.20099 50.00077,-51.20099 z"
+           id="path918"
+           style="fill:#ffffff;stroke-width:2.00003" />
+        <path
+           class="st1"
+           d="m 1011.9458,-366.52995 h -21.2003 v 139.20267 h 21.2003 v -77.00148 c 0,-28.40054 22.4004,-43.60084 47.2008,-43.60084 v -20.80039 c -19.2003,0 -35.8006,8.20015 -47.2008,21.2004 z"
+           id="path920"
+           style="fill:#ffffff;stroke-width:2.00003" />
+        <polygon
+           class="st1"
+           points="433.8,116.6 418.1,116.6 418.1,89.2 407.5,89.2 407.5,116.6 397.1,116.6 397.1,126.2 407.5,126.2 407.5,186.2 418.1,186.2 418.1,126.2 433.8,126.2 "
+           id="polygon922"
+           style="fill:#ffffff"
+           transform="matrix(2.000031,0,0,2.0000384,280.7345,-599.73443)" />
+        <path
+           class="st1"
+           d="m 1237.9493,-223.92721 c 21.2004,0 39.8007,-10.2002 52.6009,-25.6005 v 22.80044 h 21.2003 v -139.80268 h -21.2003 v 22.80044 c -12.6002,-15.2003 -31.4005,-25.00048 -52.6009,-25.00048 -39.6006,0 -72.2011,32.60062 -72.2011,72.20138 0,38.80075 32.6005,72.6014 72.2011,72.6014 z m -0.8,-20.8004 c -28.2004,0 -49.4007,-24.40047 -49.4007,-52.001 0,-28.20054 21.2003,-51.20099 49.4007,-51.20099 27.6005,0 52.0008,23.00045 52.0008,51.20099 0,27.60053 -24.4003,52.001 -52.0008,52.001 z"
+           id="path924"
+           style="fill:#ffffff;stroke-width:2.00003" />
+        <path
+           class="st1"
+           d="m 1367.9514,-394.73049 c 8.0001,0 14.8002,-6.60013 14.8002,-15.2003 0,-7.60014 -7.0001,-14.60028 -14.8002,-14.60028 -8.6002,0 -15.2003,7.00014 -15.2003,14.60028 0,8.60017 6.6001,15.2003 15.2003,15.2003 z m -10.8002,167.40321 h 22.2003 v -139.20267 h -22.2003 z"
+           id="path926"
+           style="fill:#ffffff;stroke-width:2.00003" />
+        <path
+           class="st1"
+           d="m 1423.9522,-227.32728 h 21.2003 v -74.00142 c 0,-31.4006 17.4003,-47.20091 45.6008,-46.6009 23.2003,0 35.8005,13.60027 35.8005,41.2008 v 79.40152 h 21.2003 v -79.40152 c 0,-44.40086 -17.0002,-62.00119 -57.0008,-62.00119 -19.0003,0 -34.4006,7.00013 -45.6008,19.00036 v -16.80032 h -21.2003 z"
+           id="path928"
+           style="fill:#ffffff;stroke-width:2.00003" />
+        <path
+           class="st1"
+           d="m 1722.1568,-296.72861 c 0,-39.60076 -32.6005,-72.20139 -72.2011,-72.20139 -39.6006,0 -72.2011,32.60063 -72.2011,72.20139 0,39.00075 32.6005,72.8014 72.2011,72.8014 28.2005,0 53.2008,-16.20032 64.801,-40.20078 h -26.2004 c -8.8001,11.40022 -22.4003,19.40038 -38.6006,19.40038 -24.6004,0 -44.6007,-19.00037 -49.0007,-42.00081 h 121.2018 z m -72.2011,-51.20099 c 24.4004,0 44.4007,17.80035 49.0008,40.80079 h -98.2015 c 4.8,-23.00044 24.6003,-40.80079 49.2007,-40.80079 z"
+           id="path930"
+           style="fill:#ffffff;stroke-width:2.00003" />
+        <path
+           class="st1"
+           d="m 1776.5577,-366.52995 h -21.2003 v 139.20267 h 21.2003 v -77.00148 c 0,-28.40054 22.4003,-43.60084 47.2007,-43.60084 v -20.80039 c -19.4003,0 -35.8005,8.20015 -47.2007,21.2004 z"
+           id="path932"
+           style="fill:#ffffff;stroke-width:2.00003" />
+        <path
+           class="st1"
+           d="m 1855.7589,-225.72725 c 9.4002,0 17.4003,-8.00015 17.4003,-17.80034 0,-9.40018 -8.0001,-17.40034 -17.4003,-17.40034 -9.8001,0 -17.8003,8.00016 -17.8003,17.40034 0,9.80019 8.0002,17.80034 17.8003,17.80034 z"
+           id="path934"
+           style="fill:#ffffff;stroke-width:2.00003" />
+        <path
+           class="st1"
+           d="m 1927.76,-394.73049 c 8.0002,0 14.8003,-6.60013 14.8003,-15.2003 0,-7.60014 -7.0002,-14.60028 -14.8003,-14.60028 -8.6001,0 -15.2002,7.00014 -15.2002,14.60028 0.2,8.60017 6.8001,15.2003 15.2002,15.2003 z m -10.6001,167.40321 h 22.2003 v -139.20267 h -22.2003 z"
+           id="path936"
+           style="fill:#ffffff;stroke-width:2.00003" />
+        <path
+           class="st1"
+           d="m 2044.9618,-223.92721 c 39.6007,0 72.2012,-33.80065 72.2012,-72.8014 0,-39.60076 -32.6005,-72.20139 -72.2012,-72.20139 -39.6006,0 -72.2011,32.60063 -72.2011,72.20139 0,39.00075 32.6005,72.8014 72.2011,72.8014 z m 0,-124.00239 c 28.2005,0 50.0008,23.00045 50.0008,51.20099 0,27.60053 -21.8003,52.001 -50.0008,52.001 -28.2004,0 -50.0007,-24.40047 -50.0007,-52.001 0,-28.00054 21.8003,-51.20099 50.0007,-51.20099 z"
+           id="path938"
+           style="fill:#ffffff;stroke-width:2.00003" />
+      </g>
+      <g
+         id="g1146"
+         transform="matrix(0.38027197,0,0,0.38027197,-88.519571,100.74208)"
+         style="fill:#ffffff">
+        <polygon
+           class="st0"
+           points="84.3,97.3 84.3,76.6 80.3,76.6 80.3,97.3 "
+           id="polygon900"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <polygon
+           class="st0"
+           points="101.5,97.3 101.5,76.6 97.5,76.6 97.5,97.3 "
+           id="polygon902"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <polygon
+           class="st0"
+           points="56.6,76.6 125,37.1 120.9,30 52.5,69.5 "
+           id="polygon904"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <polygon
+           class="st0"
+           points="193,76.6 124.6,37.1 128.7,30 197.1,69.5 "
+           id="polygon906"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <polygon
+           class="st0"
+           points="21.8,76.7 209.2,76.7 209.2,68.5 21.8,68.5 "
+           id="polygon908"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <path
+           class="st0"
+           d="M 929.21466,281.88777 V 38.883111 h 16.40025 V 293.688 c -4.40007,-5.0001 -10.00016,-8.60017 -16.40025,-11.80023 z"
+           id="path910"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd;stroke-width:2.00003" />
+        <path
+           class="st0"
+           d="M 901.21422,277.68769 V -65.118889 h 16.40026 V 279.68773 c -4.60008,-2.20004 -15.80025,-2.00004 -16.40026,-2.00004 z"
+           id="path912"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd;stroke-width:2.00003" />
+        <path
+           class="st0"
+           d="M 745.81181,311.88835 C 725.8115,297.08806 712.6113,273.48761 712.6113,246.6871 c 0,-14.20028 3.80006,-28.20055 10.80017,-40.40078 h 140.00217 c 7.20011,12.20023 10.80016,26.2005 10.80016,40.40078 0,12.40023 -1.60002,24.00046 -6.6001,34.40066 -10.60016,-10.2002 -26.20041,-14.60028 -42.00065,-14.60028 -28.00043,0 -52.00081,17.40033 -58.2009,43.40083 -2.20004,-0.2 -3.60006,-0.40001 -5.80009,-0.40001 -5.40009,0.20001 -10.60017,1.00002 -15.80025,2.40005 z"
+           id="path914"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd;stroke-width:2.00003" />
+        <polygon
+           class="st0"
+           points="77.7,127.8 77.7,106.5 56.5,106.5 56.5,127.8 "
+           id="polygon940"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <polygon
+           class="st0"
+           points="53.8,127.8 53.8,106.5 32.6,106.5 32.6,127.8 "
+           id="polygon942"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <polygon
+           class="st0"
+           points="53.8,151.5 53.8,130.2 32.6,130.2 32.6,151.5 "
+           id="polygon944"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <polygon
+           class="st0"
+           points="77.7,151.5 77.7,130.2 56.5,130.2 56.5,151.5 "
+           id="polygon946"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <polygon
+           class="st0"
+           points="101.5,151.5 101.5,130.2 80.3,130.2 80.3,151.5 "
+           id="polygon948"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <polygon
+           class="st0"
+           points="101.5,116.4 101.5,95.1 80.3,95.1 80.3,116.4 "
+           id="polygon950"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd"
+           transform="matrix(2.000031,0,0,2.0000384,659.21047,-103.11962)" />
+        <path
+           class="st0"
+           d="m 774.41226,318.28847 c 5.80009,-24.60047 28.00043,-43.00082 54.40084,-43.00082 17.00026,0 32.2005,7.60014 42.60066,19.60037 9.00014,-6.20012 19.80031,-9.80019 31.60049,-9.80019 30.80048,0 55.80086,25.00048 55.80086,55.80107 0,6.40013 -1.00001,12.40024 -3.00004,18.20035 6.8001,9.20018 11.00017,20.8004 11.00017,33.20064 0,30.80059 -25.00039,55.80107 -55.80087,55.80107 -13.60021,0 -26.0004,-4.80009 -35.60055,-12.80024 -10.20016,14.20027 -26.80041,23.60045 -45.60071,23.60045 -21.60033,0 -40.40062,-12.40024 -49.80077,-30.40058 -3.80006,0.80001 -7.60012,1.20002 -11.60018,1.20002 -30.80047,0 -56.00087,-25.00048 -56.00087,-55.80107 0,-30.80059 25.00039,-55.80107 56.00087,-55.80107 2.00003,-0.20001 4.00006,-0.20001 6.0001,0.2 z"
+           id="path952"
+           style="clip-rule:evenodd;fill:#ffffff;fill-rule:evenodd;stroke-width:2.00003" />
+      </g>
+    </g>
+  </g>
+</svg>

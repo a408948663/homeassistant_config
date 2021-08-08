@@ -1,0 +1,9 @@
+{
+  "domain": "spotify-playlist-sensor",
+  "name": "Spotify Playlist Sensor",
+  "version": "0.0.1",
+  "documentation": "https://github.com/dnguyen800/spotify-playlist-sensor",
+  "dependencies": ["http"],
+  "requirements": ["spotipy-homeassistant==2.4.4.dev1"], 
+  "codeowners": ["@dnguyen800"]
+}
