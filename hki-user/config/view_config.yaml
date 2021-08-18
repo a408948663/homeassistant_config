@@ -1,0 +1,841 @@
+view_config:
+  home:
+    title: greeting
+    show_in_navbar: true
+    show_in_menu: false
+    # search:
+    # favorites:
+    #   title: 常用功能
+    #   show_title: true
+    # rooms:
+    #   title: 我的房间
+    #   show_title: true
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths:  
+    columns: 
+      buttons: 3
+
+  menu:
+    title: 功能导航
+    show_in_navbar: true
+    show_in_menu: false
+    icon: mdi:apps
+    # subtitle: "[[[ return `您已安装Homekit Infused ${states['sensor.hki_current_version'].state}版本`; ]]]"
+    search:
+    # favorites:
+    #   title: 常用功能
+    #   show_title: true
+    # menu: 
+    #   title: 导航菜单
+    # rooms:
+    #   title: 我的房间
+    #   show_title: true
+    columns: 
+      buttons: 3
+    # hki_menu:
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths: 
+
+  house:
+    title: 我的房间
+    show_in_navbar: true
+    show_in_menu: false
+    icon: mdi:door
+    # subtitle: "[[[ return `当前HKI版本 :  ${states['sensor.hki_current_version'].state}`; ]]]"
+    # search:
+    # favorites:
+    #   title: 常用功能
+    #   show_title: true
+    # menu: 
+    #   title: 导航菜单
+    # rooms:
+    #   title: 我的房间
+    #   show_title: true
+    columns: 
+      buttons: 4
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 400
+      max_width: 500
+      max_cols: 2
+      rtl: false
+    #  column_widths: 
+
+# Person1
+  person_1:
+    title: 我
+    show_in_navbar: false
+    show_in_menu: false
+    subtitle: "[[[ if (states['person.huzemin'].state == 'home') return `爸爸在家呐`; 
+    if (states['person.huzemin'].state == '公司') return `爸爸在办公室`; 
+    else return `爸爸在 ${states['sensor.hassapp_huzemin_iphone7p_geocoded_location'].state} ,回家要 ${states['sensor.traffic_office_to_home'].state} 分钟`; ]]]"
+    button_badge: person.huzemin
+    columns: 
+      buttons: 3
+    icon: mdi:human-male
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths: 
+
+# person2
+  person_2:
+    title: 老婆
+    show_in_navbar: false
+    show_in_menu: false
+    subtitle:   "[[[ if (states['person.sunyujiao'].state == 'home') return `妈妈在家里`; 
+    if (states['person.sunyujiao'].state == '公司') return `妈妈在办公室`; 
+    else return `妈妈在 ${states['sensor.sunyujiao_iphone_geocoded_location'].state} ,接妈妈要 ${states['sensor.traffic_office_to_office'].state} 分钟`; ]]]"
+    button_badge: person.sunyujiao
+    columns: 
+      buttons: 3
+    icon: mdi:human-female
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths:  
+
+# Person3
+  person_3:
+    title: 儿子
+    show_in_navbar: false
+    show_in_menu: false
+    subtitle:  "[[[ if (states['person.huyicheng'].state == 'home') return `宝贝在家里`; 
+    if (states['person.huyicheng'].state == '幼儿园') return `宝贝在幼儿园`; 
+    else return `宝贝在 ${states['device_tracker.ww_gps1'].state} ,接儿子要 ${states['sensor.traffic_office_to_school'].state} 分钟`; ]]]"
+    button_badge: person.huyicheng
+    columns: 
+      buttons: 3
+    icon: mdi:emoticon-wink-outline
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths:  
+
+# Person4
+  person_4:
+    title: 汽车
+    show_in_navbar: false
+    show_in_menu: false
+    subtitle:  "[[[ if (states['person.cruze'].state == 'home') return `汽车在小区停车位上`; 
+    if (states['person.cruze'].state == '公司') return `汽车在爸爸上班的地方`; 
+    else return `汽车在 ${states['sensor.traccar_obd'].state} ,车速为 ${states['sensor.traccar_cruze_speed_obd'].state} km/h`; ]]]"
+    button_badge: person.cruze
+    columns: 
+      buttons: 3
+    icon: mdi:car-back
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths:  
+
+# ######### ROOMS ############################################################################################################
+# outdoor
+  Outdoor:
+    subtitle: "[[[ return `门锁上次报警是因为${states['sensor.bmcn03_event_647860_door_door_status'].state}，注意随手关门!`; ]]]"
+    button_badge: sensor.xiaomi_lock_user
+    title: 门口
+    columns: 
+      buttons: 4
+      graphs: 1
+    icon: mdi:door
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths:  
+    type: room
+    entities_card:
+      - title: 门锁
+        entities: 
+          - sensor.xiaomi_lock_user
+          - sensor.bmcn03_event_647860_lock_lock_action
+          - sensor.bmcn03_event_647860_door_door_status
+          - sensor.bmcn03_event_647860_door_door_time
+    graphs:
+      - title: 户外温湿度
+        line_color: green
+        # type: button
+        line_width: 3
+        entities:
+          - entity: sensor.home_wen_du
+            name: 室外温度
+            hours_to_show: 24
+          - entity: sensor.home_shi_du
+            name: 室外湿度
+            hours_to_show: 24
+    simple_weather:
+      - title: 天气预报
+        entity: weather.home
+        city_name: 津南
+    devices:
+      - title: 活动监测
+        # type: button
+        line_color: cyan
+        entities:
+          - entity: alarm_control_panel.home_alarm
+            name: 警戒模式
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.door_window_sensor_158d0002014310
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.motion_sensor_158d0001e521e9
+            name: 门口
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.hikvisioncam_door_motion
+            name: 摄像头
+            show_last_changed: false
+            show_state: true
+    cameras:
+      - title: 门口监控
+        entities:
+          - entity: camera.hikvisioncam_door
+            aspect_ratio: 16x9
+            
+# Hallway
+  hallway:
+    subtitle: "[[[ return `当前门厅温度为${states['sensor.m1_temperature'].state}℃`; ]]]"
+    button_badge: sensor.m1_temperature
+    title: 门厅
+    columns: 
+      buttons: 4
+      graphs: 2
+    icon: mdi:redhat
+    type: room
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths:  
+    cameras:
+      - title: 门厅监控
+        entities:
+          - entity: camera.ezvizcam_hallway
+            aspect_ratio: 16x9
+    devices:
+      - title: 电源开关
+        entities:
+          - entity: switch.broadlink_mp1_01_s2
+            # lock: true
+            name: 门板电源
+          - entity: switch.broadlink_mp1_01_s3
+            lock: true
+            name: 多模网关
+          - entity: switch.broadlink_mp1_01_s4
+            # lock: true
+            name: 监控电源
+          - entity: switch.broadlink_mp1_01_s1
+            lock: true
+            name: 过道插排
+          - entity: switch.broadlink_mp1_04_s1
+            # lock: true
+            name: 手表充电
+          - entity: switch.broadlink_mp1_04_s2
+            # lock: true
+            name: 手机充电
+          - entity: switch.broadlink_mp1_04_s3
+            # lock: true
+            name: 手机充电
+          - entity: switch.broadlink_mp1_04_s4
+            lock: true
+            # name: 平板充电
+      - title: 平板控制
+        entities: 
+          - entity: switch.pixel_c_screensaver
+            name: 屏保模式
+          - entity: switch.pixel_c_kiosk_lock
+          - entity: binary_sensor.pixel_c_plugged_in
+            show_last_changed: false
+            show_state: true
+          - entity: sensor.pixel_c_battery_level
+            show_last_changed: false
+            show_state: true
+      - title: 灯光控制
+        entities: 
+          - entity: light.menting_xdd
+            name: 吸顶灯
+          - entity: light.guodao_dd
+            name: LED灯带
+          - entity: light.pixel_c_screen
+            type: rgb
+            name: 平板屏幕
+          - entity: switch.pixel_c_screensaver
+            name: 电子相册
+    graphs:
+      - title: 环境监测(M1)
+        line_color: DeepSkyBlue
+        # type: button
+        line_width: 3
+        entities:
+          - sensor.m1_temperature
+          - sensor.m1_humidity
+          - sensor.m1_pm2_5
+          - sensor.m1_hcho
+      - title: 平板状态
+        line_color: Yellow
+        # type: button
+        line_width: 3
+        entities:
+          - sensor.pixel_c_wifi_signal_level
+          - sensor.pixel_c_ram_free_memory
+    media_players:
+      - title: 播放器
+        entities:
+          - entity: media_player.pixel_c_media_player
+            name: PixelC
+
+# Diningroom
+  diningroom:
+    subtitle: "[[[ return `当前餐厅颗粒物浓度为${states['sensor.m1_pm2_5'].state}μg/m³`; ]]]"
+    button_badge: sensor.m1_hcho
+    title: 餐厅
+    columns: 
+      buttons: 4
+      graphs: 2
+    icon: mdi:noodles
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 1
+      rtl: false
+    #  column_widths:  
+    type: room
+    cameras:
+      - title: 餐厅监控 
+        entities:
+          - entity: camera.ezvizcam_hallway
+            name: 餐厅监控
+            aspect_ratio: 16x9
+    devices:
+      - title: 电源开关
+        entities:
+          - entity: alarm_control_panel.xiaomi_gateway_alarm
+            name: 网关警戒
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.switch_158d0001f3dd9e
+            name: 餐厅按钮
+            show_last_changed: false
+            show_state: true
+          - entity: sensor.battery_158d0001f3dd9e
+            name: 按钮电量
+            show_last_changed: false
+            show_state: true
+          - entity: device_tracker.lumi_gateway_v3_miio57539918
+            name: 网关状态
+            show_last_changed: false
+            show_state: true
+      - title: 灯光控制
+        entities: 
+          - entity: light.canting_dd
+            name: 餐厅吊灯
+          - entity: light.gateway_light_34ce008c099b
+            type: rgb
+            name: 网关夜灯
+          - entity: light.yeelight_strip4_0x0000000010df65ba
+            type: color-temp
+            name: 照片墙灯带
+          - entity: light.midesklamp1s_f8cc
+            type: color-temp
+            name: 书桌阅读灯
+    graphs:
+      - title: 环境监测
+        line_color: DeepSkyBlue
+        # type: button
+        line_width: 3
+        entities:
+          - entity: sensor.illumination_34ce008c099b
+            name: 网关光感
+          - entity: sensor.battery_158d0001f3dd9e
+            name: 按钮电量
+
+# livingroom
+  Livingroom:
+    subtitle:  "[[[ return `当前客厅温度为${states['sensor.m1_temperature'].state}℃`; ]]]"
+    button_badge: binary_sensor.motion_sensor_158d0001e02fa1
+    title: 客厅
+    columns: 
+      buttons: 4
+      graphs: 2
+    icon: mdi:sofa
+    type: room
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths:  
+    cameras:
+      - title: 客厅监控
+        entities:
+          - entity: camera.ezvizcam_hallway
+            name: 客厅监控
+            aspect_ratio: 16x9
+    devices:
+      - title: 电源开关
+        entities:
+          - entity: switch.dc1_livingroom_1
+            name: 播放器总控
+            lock: true
+          - entity: switch.dc1_livingroom_2
+            name: 罗技音响
+            lock: true
+          - entity: switch.dc1_livingroom_3
+            name: 电视电源
+            lock: true
+          - entity: switch.dc1_livingroom_4
+            name: 神盾盒子
+            lock: true
+          - entity: switch.broadlink_mp1_02_s1
+            name: 扫地机
+          - entity: switch.broadlink_mp1_02_s2
+            name: 博联遥控器
+          - entity: switch.broadlink_mp1_02_s3
+            name: 小爱同学
+            # lock: true
+          - entity: switch.broadlink_mp1_02_s4
+            name: 收音机
+      - title: 设备控制
+        entities:
+          - light.keting_xdd
+          - light.dianshiqiang_dd
+          - light.dianshiqiang_td
+          - entity: switch.xiaomi_gateway
+            name: 空调插座
+            lock: true
+          - entity: climate.livingroom_acpartner
+          - entity: climate.livingroom_climate_smartir
+            name: SmartIR
+      - title: 传感器
+        entities:
+          - entity: binary_sensor.door_window_sensor_158d00026ba081
+            name: 窗户
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.motion_sensor_158d0001e02fa1
+            name: 活动检测
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.switch_158d000201a724
+            name: 客厅按钮
+            show_last_changed: false
+            show_state: true
+          - entity: sensor.battery_158d000201a724
+            name: 按钮电量
+            show_last_changed: false
+            show_state: true
+    media_players:
+      - title: 播放器
+        entities:
+          - entity: media_player.sony_tv
+            # type: mini-media-player
+            volume_stateless: true
+            max_volume: 80
+          - entity: media_player.livingroom_logitech_speaker
+            # type: mini-media-player
+            volume_stateless: true
+            max_volume: 80
+          - entity: media_player.appletv
+            # type: mini-media-player
+            volume_stateless: true
+            max_volume: 80
+          - entity: media_player.livingroom_androidtv
+            # type: mini-media-player
+            volume_stateless: true
+            max_volume: 80
+          - entity: media_player.ke_ting_googlehomemini
+            # type: mini-media-player
+            volume_stateless: true
+            max_volume: 80
+
+    graphs:
+      - title: 环境监测
+        line_color: DeepSkyBlue
+        # type: button
+        line_width: 3
+        entities:
+          - entity: sensor.t2_cloud_ks5k00
+            name: 温度
+          - entity: sensor.t2_cloud_ks5k00_humidity
+            name: 湿度
+      - title: 功率统计
+        line_color: DeepSkyBlue
+        # type: button
+        line_width: 3
+        entities:
+          - entity: sensor.xiaomi_acpartner_kt_load_power
+            name: 空调
+          - entity: sensor.dc1_livingroom_power
+            name: 播放器
+
+# Bedroom
+  bedroom:
+    subtitle: "[[[ return `当前主卧温度为${states['sensor.temperature_158d00019f912b'].state}℃`; ]]]"
+    button_badge: binary_sensor.motion_sensor_158d0001e53c30
+    title: 主卧
+    columns: 
+      buttons: 4
+      graphs: 2
+    icon: mdi:bed-king
+    type: room
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths:  
+    devices:
+      - title: 灯光&插座
+        entities:
+          - entity: light.woshi_xdd
+          - entity: light.sonoff01
+          - entity: switch.bedroom_chuangmi_plug
+            name: 主卧电视
+          - entity: switch.bedroom_chuangmi_plug_usb
+            name: 电视果盒子
+      - title: 风扇&遥控器
+        entities:
+          - fan.xiaomi_air_humidifier
+          - fan.xiaomi_smart_fan_bedroom
+          - remote.broadlink_bedroom_remote
+          - cover.bedroom
+      - title: 传感器
+        entities: 
+          - entity: binary_sensor.motion_sensor_158d0001e53c30
+            name: 活动检测
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.door_window_sensor_158d00032605b8
+            name: 窗户状态
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.switch_158d0001d58142
+            show_last_changed: false
+            show_state: true
+          - entity: switch.wol_hzm_pc
+            name: 台式机
+    media_players:
+      - title: 播放器
+        entities:
+          - entity: media_player.zhu_wo_googlehomemini
+          - entity: media_player.bedroom_sony_tv
+    graphs:
+      - title: 设备电量
+        line_color: DeepSkyBlue
+        # type: button
+        line_width: 3
+        entities:
+          - entity: sensor.battery_158d00015f264d
+            name: 单键面板
+          - entity: sensor.battery_158d0001e53c30
+            name: 探测器
+          - entity: sensor.battery_158d00032605b8
+            name: 窗磁
+          - entity: sensor.0x000b57fffe91cb26_battery
+            name: 旋钮
+      - title: 环境监测
+        line_color: DeepSkyBlue
+        # type: button
+        line_width: 3
+        entities:
+          - entity: sensor.temperature_158d00019f912b
+          - entity: sensor.humidity_158d00019f912b
+
+# Studyroom
+  studyroom:
+    subtitle: "[[[ return `当前次卧温度为${states['sensor.temperature_158d0001dc17c3'].state}℃`; ]]]"
+    button_badge: binary_sensor.motion_sensor_158d0001ad5c41
+    title: 次卧
+    columns: 
+      buttons: 4
+      graphs: 1
+    icon: mdi:bed-queen
+    type: room
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 3
+      rtl: false
+    #  column_widths:  
+    devices:
+      - title: 灯光&其他
+        entities: 
+          - entity: light.shufang_xdd
+            name: 吸顶灯
+          - entity: switch.dc1_bedroom_4
+            name: 台灯
+          - entity: climate.studyroom_acpartner
+            name: 空调
+          - entity: fan.xiaomi_smart_fan
+            name: 风扇
+      - title: 远程唤醒(wol)
+        entities:
+          - entity: switch.wol_ds416p
+          - entity: switch.wol_gen8
+          - entity: switch.wol_hzm_lenovo
+          - entity: switch.wol_hzm_mac
+      - title: 电源开关
+        entities:
+          - entity: switch.studyroom_chuangmi_plug
+            name: 机柜插座
+            lock: true
+          - entity: switch.broadlink_mp1_03_s1
+            name: 小显示器
+          - entity: switch.xiaomi_gateway_2
+            name: 空调插座
+            lock: true
+          - entity: switch.212a01_58b623ed06ca
+            name: 硬盘插座
+            lock: true
+      - title: 探测器
+        entities: 
+          - entity: binary_sensor.motion_sensor_158d0001ad5c41
+            name: 活动探测
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.door_window_sensor_158d0002a16231
+            name: 窗磁
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.switch_158d0001f3d5d1
+            name: 按钮开关
+            show_last_changed: false
+            show_state: true
+          - entity: alarm_control_panel.xiaomi_gateway_alarm_4
+            name: 警戒模式
+            show_last_changed: false
+            show_state: true
+    graphs:
+      - title: 环境监测
+        line_color: DeepSkyBlue
+        # type: button
+        line_width: 3
+        entities:
+          - entity: sensor.t2_cloud_qse400
+          - entity: sensor.t2_cloud_qse400_humidity
+    media_players:
+      - title: 播放器
+        entities:
+          - media_player.ci_wo_chromecast
+          - media_player.ci_wo_googlehomemini
+          - media_player.bedroom_edifier_speaker
+        
+# kitchen
+  Kitchen:
+    subtitle: "[[[ return `当前厨房烟雾探测器状态为${states['binary_sensor.smoke_sensor_158d0002cb5a00'].state}状态！`; ]]]"
+    button_badge: binary_sensor.water_leak_sensor_158d00028ee572
+    title: 厨房
+    columns: 
+      buttons: 4
+      graphs: 1
+    icon: mdi:pot-steam
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 1
+      rtl: false
+    #  column_widths:  
+    type: room
+    cameras:
+      - title: 厨房监控
+        entities:
+          - entity: camera.ezvizcam_hallway
+            name: 厨房监控
+            aspect_ratio: 16x9
+    devices:
+      - title: 灯光&电源
+        entities:
+          - entity: light.chufang_xdd
+            name: 吸顶灯
+          - entity: binary_sensor.28d1272f29c4_light
+            name: 小夜灯
+            show_last_changed: false
+            show_state: true
+          - entity: switch.plug_158d0001b196a8
+            name: 洗碗机
+          - entity: sensor.dishwasher_status
+            name: 洗碗机状态
+            show_last_changed: false
+            show_state: true
+          
+      - title: 探测器
+        entities: 
+          - entity: binary_sensor.smoke_sensor_158d0002cb5a00
+            name: 烟雾探测
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.water_leak_sensor_158d00028ee572
+            name: 漏水感应
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.motion_sensor_kitchen_light
+            name: 活动检测
+            show_last_changed: false
+            show_state: true
+          - entity: sensor.28d1272f29c4_battery
+            name: 夜灯电量
+            show_last_changed: false
+            show_state: true
+    graphs:
+      - title: 功率监测
+        line_color: DeepSkyBlue
+        # type: button
+        line_width: 3
+        entities:
+          - entity: sensor.xiaomi_plug_zigbee_load_power
+    media_players:
+      - title: 播放器
+        entities:
+          - media_player.chu_fang_googlehomemini
+
+#Bbathroom
+  bathroom:
+    subtitle:  "[[[ if (states['fan.sonoff08'].state == 'off') return `厕所浴霸当前未打开，安全。`; else return `厕所浴霸当前开启中,不要老是忘记关掉！`; ]]]"
+    button_badge: binary_sensor.motion_sensor_158d0001e59ac8
+    title: 洗手间
+    columns: 
+      buttons: 4
+      graphs: 1
+    icon: mdi:shower-head
+    type: room
+    custom_cards: 
+      position: top
+      type: default
+    layout:
+      type: custom:horizontal-layout
+      width: 300
+      max_width: 500
+      max_cols: 1
+      rtl: false
+    #  column_widths:  
+    devices:
+      - title: 灯光&风扇
+        entities: 
+          - entity: light.cesuo_xdd
+            name: 吸顶灯
+          - entity: light.sonoff03
+            name: 镜前灯
+          - entity: fan.sonoff09
+            name: 排气扇
+          - entity: fan.sonoff08
+            name: 取暖器
+
+      - title: 生活电器
+        entities:
+          - entity: climate.bedroom_acpartner
+            name: 热水器
+            lock: true
+          - entity: switch.212a01_58b623ecd9a0
+            name: 洗衣机
+            lock: true
+
+      - title: 传感器&探测器
+        entities: 
+          - entity: binary_sensor.door_window_sensor_158d00032604d3
+            name: 厕所门
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.motion_sensor_158d0001e59ac8
+            name: 活动探测
+            show_last_changed: false
+            show_state: true
+          - entity: binary_sensor.28d1272d0a0d_motion
+            name: 夜灯检测
+            show_last_changed: false
+            show_state: true
+          - entity: sensor.28d1272d0a0d_battery
+            name: 夜灯电量
+            show_last_changed: false
+            show_state: true
+    graphs:
+      - title: 功率监测
+        line_color: DeepSkyBlue
+        # type: button
+        line_width: 3
+        entities:
+          - entity: sensor.xiaomi_acpartner_zw_load_power
+            name: 热水器
+          - entity: sensor.212a01_58b623ecd9a0_power
+            name: 洗衣机
+    media_players:
+      - title: 播放器
+        entities:
+          - media_player.ce_suo_googlehomemini
+
+
+
