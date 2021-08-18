@@ -1,8 +1,0 @@
-{
-  "domain": "aligenie",
-  "name": "aligenie",
-  "documentation": "https://github.com/feversky/aligenie",
-  "dependencies": ["http"],
-  "codeowners": ["feversky"],
-  "requirements": []
-}

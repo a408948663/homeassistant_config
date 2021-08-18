@@ -1,9 +1,0 @@
-{
-  "domain": "hello_miai",
-  "name": "hello_miai",
-  "version": "1.0.0",
-  "documentation": "https://github.com/harepo/hello_miai",
-  "dependencies": [],
-  "codeowners": [],
-  "requirements": []
-}
