@@ -24,6 +24,14 @@
 
    
 
+# 作者配置示例
+
+
+
+https://github.com/jimz011/homekit-infused/tree/4.x.x-personal
+
+
+
 # 我的卡片示例
 
 
@@ -53,7 +61,7 @@
 
 ...
 
-我会抽时间整理一下，将个人卡片效果配置放在这个仓库里面,感谢JIMZ011大佬做了一个这么漂亮的主题框架，同时也感谢开源社区大神们带给我们这个好玩的HomeAssistant平台。
+我会抽时间整理一下，将个人卡片效果配置放在这个仓库里面,感谢JIMZ011大佬做了一个这么漂亮的主题框架，同时也感谢开源社区大神们带给我们HomeAssistant平台。
 
 # BTW
 
@@ -64,3 +72,4 @@ bilibili地址: https://space.bilibili.com/412408883
 
 
 --- update 2021-08-18 by 土豆🥔.
+
